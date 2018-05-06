@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EmployeeDailyWork</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+
+
+</head>
+<body>
+<nav class="navbar navbar-default" id="root-nav">
+ 
+  <ul class="nav navbar-nav " >
+      <% if employee_signed_in? %>
+        <% if current_employee.create_project? %>
+          <li ><a href="/manager"/> My Dashbord </a></li>
+          <li ><a href="/projects"/> My Project </a></li>
+        <% else%>
+          <li ><a href="/employee"/> My Dashbord</a></li> 
+        <% end%>  
+        <li> <%= link_to 'LogOut', destroy_employee_session_path, method: :delete%>
+        </li>
+      <%else%> 
+        <li > <a href="/employees/sign_up"> Sign Up</a></li>
+        <li > <a href="/employees/sign_in"> Login</a></li>
+       <%end%>
+  </ul>
+  </nav>
+<div class="container">  
+  <%if !notice.nil?%>
+      <p class="alert alert-success"><%= notice %>
+      </p>
+  <%end%>
+  <%if !alert.nil?%> 
+    <p class="alert alert-danger">
+      <%= flash[:alert] %>
+      </p>
+  <%end%>
+
+  <%= yield %>
+
+</div>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

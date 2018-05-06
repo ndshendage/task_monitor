@@ -1,0 +1,31 @@
+
+were workin with timesheet project .. locs.. rubyassignment/ror/assignment/employee_daily_work
+## styling for alternate rows;
+tr:nth-child(odd) {
+    background-color: burlywood ;
+    }
+    tr:nth-child(even) {
+    background-color: chocolate;
+    }
+## use of RADIO_button
+
+<div class="field">
+   <label> Select your Gender</label>
+   <br>
+    <%= f.radio_button :gender , 'Male', :checked => true%>
+    <%= label :gender, 'male'%>
+    <br>
+    <%= f.radio_button :gender , 'Female'%>
+    <%= label :gender, 'female'%>
+  </div> 
+// label is shown to user ... if male shows Male ... Auto capitalise.
+and value in f.radio_button_tag is saved into database
+
+## drop down list 
+
+<div class="field">
+    <label>Select your blood group</label><br>
+    <%= f.select :blood_group, [ ['A+','a+'], ['A-','a-'], ['B+','b+'],['B-','b-'], ['AB+','ab+'],['AB-','ab-'], ['O+','o+'],['O-','o-']]%>
+  </div>
+// first is key another one is value;
+key shown to user where value is stored into the database

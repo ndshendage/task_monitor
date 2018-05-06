@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="title">List of Tasks for <%= @project.name %></h1>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Status</th>
+      <th colspan="3" class="center"> Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tasks.each do |task| %>
+      <tr>
+        <td><%= task.name %></td>
+        <td><%= task.description %></td>
+        <td><%= task.start_date %></td>
+        <td><%= task.end_date %></td>
+        <td><%= task.status %></td>
+        <td><%= link_to 'Details', project_task_path(@project, task) %></td>
+
+        <td><%= link_to "Edit", edit_project_task_path(@project, task) %></td>
+        <% if current_employee.create_project? %>
+          <td><%= link_to 'Destroy', project_task_path(@project, task), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end%>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<% if current_employee.create_project? %>
+  <%= link_to 'Create New Task', new_project_task_path, class: 'btn btn-success btn-block' %>
+<% end%>  

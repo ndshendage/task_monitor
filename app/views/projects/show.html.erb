@@ -1,0 +1,45 @@
+
+<p>
+  <strong>Name:</strong>
+  <%= @project.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @project.description %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @project.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @project.end_date %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @project.location %>
+</p>
+
+<p>
+  <strong>Client name:</strong>
+  <%= @project.client_name %>
+</p>
+
+<p>
+  <strong>Manager Name:</strong>
+  <%= @project.manager.name %>
+</p>
+
+<p>
+  <strong>Developer Names:</strong>
+  <% @project.employees.each do |dev| %>
+    <%= dev.name%>
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project), class: 'btn btn-primary' %>
+<%= link_to 'Back', projects_path, class: 'btn btn-default' %>

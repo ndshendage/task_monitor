@@ -1,0 +1,138 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  common:
+    home: "Home"
+    about: "About Us"
+    faq: "FAQ"
+    contact: "Contact"
+    fill_work: "Create Worksheet"
+    create_employee: "Create Employee"
+    sign_in: "Sign In"
+    sign_up: "Sign Up"
+    logout: "LogOut"
+#controller name, then actions
+  page:
+    home:
+      welcome: "You are welcome to ATH Systems LLP Pune"
+      alert_message: ""
+    faq:
+      heading: "Frequently Asked Questions"
+      alert_message: ""
+    contact:
+      heading: "Here you can Contact us"
+      alert_message: ""
+    about: 
+      heading: "Welcome to know More about Us"
+      alert_message: "" 
+  worksheet:
+    index:
+      message1: "Your Worsheet List is Empty"
+      message2: "List of Your Worksheets"
+      link_description: "Create new worsheet by following Link"
+      new_worksheet_link: "create new worksheet" 
+    new:
+      new_worksheet: "New Worksheet"
+      project_name: "Project Name"
+      work_hours: "Worked Hours"
+      employee_id: "Employee Id"
+      work_details: "Work Details"
+      attachment: "Attachment"
+      create: "Create work sheet"
+      link_description: "To go back use following link"
+      back: "Back"
+      button: "Create WorkSheet"
+    show:
+      link_description: "Use following link 'Edit' to edit this worksheet or 'Back' to visit list of worksheet"  
+      edit: "edit"
+    edit:
+      message: "Use following link to See newly created worksheet or to Go back" 
+      show_link: "Show"
+      back_link: "Back" 
+  employee: 
+    sign_up:
+      message1: "Welcome to the new registration of an Employee"
+      first_name: "First Name"
+      last_name: "Last Name"    
+      gender: "Select your Gender" 
+      birth_date: "Entert Date of Birth"
+      qualification: "Qualification "
+      department: "Department"
+      joining_date: "Joining Date"
+      email: "Email "
+      password: "Enter Password"
+      confirm_pass: "Re-enter your Password "
+      blood_group: "Select your Blood Group"
+      contact: "Enter your contact"
+      condition: "minimum 8 characters are recquired"
+      sign_up_button: "Sign Up"
+      bottom_link: "If you have already an account you can access it this "
+      login_link: "Login Here"
+    sign_in:
+      email: "Email"
+      password: "Password"
+      remember: "Remember Me"
+      login: "Login"
+      message1: "Welcome to the login page of Ath systems" 
+      forgot_password_description: "If you have forgotten your password click "
+      forgot_password_link: "Fogot Password?"
+      sign_up: "Sign Up"
+      sign_up_message: "If you dont have an account you can create it on here "
+      alert_message: "To continue this site you have lo Login First"
+    password:
+      message: "Forgot Your Password , Don't worry will let you reset it"  
+      pass_button: "send me reset instruction"
+  roles: 
+    show:
+      designation: "Designation"
+      status: "Status"
+    index:
+      designation: "Designation"
+      status: "Status"
+      actions: "Actions"
+      show_link: "Show" 
+      edit_link: "Edit"
+      destroy_link: "Destroy" 
+      heading: "List of Roles in Organization"
+      bottom_link: "If you want to add new role use this link"
+      new_role: "New Role"
+      create_button: "Create Role" 
+    new:
+      designation: "Designation"
+      status: "Status"
+  company:
+    index:
+      message: "List of Registered Company"
+      company_id: "Company"
+      company_name: "Company Name"
+      registration: "Registration"
+      start_date: " Start Date"
+      address: "Address"
+      website: "Website"
+      actions: "Actions"
+      show_link: "Show" 
+      edit_link: "Edit"
+      destroy_link: "Destroy"  
+      bottom_link_description: "You can register new Company on this link"  
+      bottom_link: "Register New Company"  
+      show_heading: "Details of Company"   
+        

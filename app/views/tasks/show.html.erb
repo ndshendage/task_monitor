@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="title"> Details of Task</h1>
+<p>
+  <strong>Name:</strong>
+  <%= @task.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @task.description %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @task.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @task.end_date %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @task.status %>
+</p>
+
+<p>
+  <strong>Developer Name:</strong>
+  <%= @task.employee.name %>
+</p>
+
+<%= link_to 'Edit', edit_project_task_path(@task.project, @task), class: 'btn btn-primary' %>
+<%= link_to 'Back', project_tasks_path(@task.project), class: 'btn btn-default' %>

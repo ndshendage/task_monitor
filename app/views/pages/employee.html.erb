@@ -1,0 +1,41 @@
+
+<h1 class="title">List of Tasks Projectwise </h1>
+
+<% count = 1%>
+<% @projects.each do |project| %>
+  <h1 class="title"><%= count%>. List of Tasks for <%= project.name%> </h1>
+  <% count = count + 1%>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Start date</th>
+        <th>End date</th>
+        <th>Status</th>
+        <th colspan="2"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% tasks = project.employee_tasks(current_employee.id) %>
+      <% tasks.each do |task| %>
+        <tr>
+        	<td><%= task.name %></td>
+          <td><%= task.description %></td>
+          <td><%= task.start_date %></td>
+          <td><%= task.end_date %></td>
+          <td><%= task.status %></td>
+          <td><%= link_to 'Details', project_task_path(project, task) %></td>
+          <td><%= link_to 'Edit', edit_project_task_path(project, task) %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+<% end%>
+
+
+
+

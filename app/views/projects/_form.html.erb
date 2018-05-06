@@ -1,0 +1,59 @@
+<%= form_for(@project) do |f| %>
+  <% if @project.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+      <ul>
+      <% @project.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name, required: true %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description, required: true %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br>
+    <%= f.date_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :end_date %><br>
+    <%= f.date_select :end_date %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br>
+    <%= f.text_field :location, required: true %>
+  </div>
+  <div class="field">
+    <%= f.label :client_name %><br>
+    <%= f.text_field :client_name, required: true %>
+  </div>
+  <% if (current_employee.super_admin? rescue false) %>
+    <div class="field">
+      <label>Select Name of Manager: </label><br>
+      <%= collection_select(:project, :manager_id, @managers, :id, :name) %>
+    </div>
+  <% end%>
+
+  <div class="field">
+    <%= hidden_field_tag 'project[employee_ids][]', nil%>
+    <label>Add developers to project: </label><br>
+    <% @developers.each do |dev| %>
+    <%= check_box_tag 'project[employee_ids][]', dev.id, @project.employees.include?(dev)%>
+    <%= dev.name%><br>
+    <%end%>
+  </div> 
+
+  <% btn_name = controller.action_name.eql?('new') ? 'Create New Project' : 'Update Project'%>
+  <div class="actions">
+    <%= f.submit btn_name, class: 'button btn btn-success' %>
+    <%= link_to "Back", :back, class: 'btn btn-default' %>
+  </div>
+<% end %>

@@ -1,0 +1,60 @@
+<h1 class="title">List of Tasks by Employee</h3>
+
+<table class="table table-bordered">
+  <thead>
+    <tr border='1px'>
+      <th>Status</th>
+      <% @developers.each do |dev|%>
+        <th> <%= dev.name %></th>
+      <% end%>
+    </tr>
+  </thead>
+
+  <tbody>
+  	<% @states.each do |state|%>
+	  	<tr>
+	  		<td><%= state %></td>
+	  		<% @developers.each do |dev|%>
+		  		<td>
+		  			<% dev.tasks.task_details_for_manager(state).each do |task|%>
+		  			    <%= task.name %>
+				        <br>
+				    <% end%>
+		  		</td>
+	  		<% end%>
+	    </tr>
+	<%end %>       
+  </tbody>
+</table>
+
+<br>
+
+<h1 class="title">List of Tasks by Project</h1>
+
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Status</th>
+      <% @projects.each do |dev|%>
+        <th> <%= dev.name %></th>
+      <% end%>
+    </tr>
+  </thead>
+
+  <tbody>
+  	<% @states.each do |state|%>
+	  	<tr>
+	  		<td><%= state %></td>
+	  		<% @projects.each do |dev|%>
+		  		<td>
+		  			<% dev.tasks.task_details_for_manager(state).each do |task|%>
+		  			    <%= task.name %>
+				        <br>
+				    <% end%>
+		  		</td>
+	  		<% end%>
+	    </tr>
+	<%end %>       
+  </tbody>
+</table>

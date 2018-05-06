@@ -1,0 +1,116 @@
+employee:
+  super_admin:
+    one:
+      first_name: 'Sourav'
+      last_name: 'Waugh'
+      birth_date: '7/7/1978'
+      gender: 'male'
+      blood_group: 'O+'
+      contact_no: '11111111111'
+      joinning_date: '23/10/2015'
+      department: 'Senior Manager'
+      qualification: 'M Tech(Computer Science)'
+      email: 'sourav@gmail.com'
+      password: '12345678'
+  admin:
+    one:
+      first_name: 'Mahender Babu'
+      last_name: 'Yadav'
+      birth_date: '7/7/1982'
+      gender: 'male'
+      blood_group: 'B+'
+      contact_no: '11111111111'
+      joinning_date: '23/10/2016'
+      department: 'Manager'
+      qualification: 'MBA(economics)'
+      email: 'msd@gmail.com'
+      password: '12345678'
+    two:
+      one:
+      first_name: 'Yogender Singh'
+      last_name: 'Tiwari'
+      birth_date: '7/7/1978'
+      gender: 'female'
+      blood_group: 'AB+'
+      contact_no: '11111111111'
+      joinning_date: '23/10/2017'
+      department: 'Manager'
+      qualification: 'MBA(economics)'
+      email: 'virus@gmail.com'
+      password: '12345678'
+
+  developer:
+    one:
+      first_name: 'Raja Babu'
+      last_name: 'Kale'
+      birth_date: '7/7/1978'
+      blood_group: 'AB+'
+      contact_no: '11111111111'
+      gender: 'male'
+      joinning_date: '23/10/2017'
+      department: 'Manager'
+      qualification: 'MBA(economics)'
+      email: 'raja@gmail.com'
+      password: '12345678'
+    
+    two:
+      first_name: 'Bharat Singh'
+      last_name: 'Tiwari'
+      birth_date: '7/7/1978'
+      blood_group: 'AB+'
+      contact_no: '11111111111'
+      joinning_date: '23/10/2017'
+      gender: 'female'
+      department: 'Manager'
+      qualification: 'MBA(economics)'
+      email: 'bharat@gmail.com'
+      password: '12345678'
+
+    three:
+      first_name: 'Yoginder Singh'
+      last_name: 'Tiwari'
+      birth_date: '7/7/1978'
+      blood_group: 'AB+'
+      contact_no: '11111111111'
+      joinning_date: '23/10/2017'
+      department: 'Manager'
+      qualification: 'MBA(economics)'
+      email: 'yogi@gmail.com'
+      password: '12345678'
+      gender: 'male'
+
+    four:
+      first_name: 'Yuva Singh'
+      last_name: 'Tiwari'
+      birth_date: '7/7/1978'
+      blood_group: 'AB+'
+      contact_no: '11111111111'
+      joinning_date: '23/10/2017'
+      department: 'Manager'
+      qualification: 'MBA(economics)'
+      email: 'yuva@gmail.com'
+      password: '12345678'
+      gender: 'female'
+
+projects:
+  one:
+    name: 'Project One- Online Material Transfer'
+    desctiption: 'We are helping people to transfer their materials from place to place'
+    start_date:
+    end_date: 
+    location: 'Melbourne'
+    client_name: 'David Wanrne'
+    status: 'active'
+    manager_id: 2
+    employee_ids: '[4,5]'
+
+  two:
+    name: 'Project One- Online Ground Booking'
+    desctiption: 'We are helping people to book grounds for their sports'
+    start_date:
+    end_date: 
+    location: 'Sydney'
+    client_name: 'Steven Morkel'
+    status: 'active'
+    manager_id: 3 
+    employee_ids: '[6,7]'

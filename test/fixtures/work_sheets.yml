@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project_name: MyString
+  worked_hours: 1
+  work_details: MyText
+  attachment: MyString
+
+two:
+  project_name: MyString
+  worked_hours: 1
+  work_details: MyText
+  attachment: MyString

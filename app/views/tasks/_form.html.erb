@@ -1,0 +1,46 @@
+<%= form_for [@project, @task] do |f| %>
+  <% if @task.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@task.errors.count, "error") %> prohibited this task from being saved:</h2>
+
+      <ul>
+      <% @task.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name, required: true %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description, required: true %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br>
+    <%= f.datetime_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :end_date %><br>
+    <%= f.datetime_select :end_date %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.select :status, [ ['Status',''] ,['new','new'], ['Inprogress','inprogress'], ['Done', 'done']], required: true%>
+  </div>
+
+  <div class="field">
+      <label>Assign to Developer: </label><br>
+      <%= collection_select(:task, :employee_id, @developers, :id, :name) %>
+  </div>
+
+  <%= f.hidden_field :project_id, value: @project.id%>
+  <% btn_name = controller.action_name.eql?('new') ? 'Create New Task' : 'Update Task'%>
+  <div class="actions">
+    <%= f.submit btn_name, class: 'button btn btn-success' %>
+    <%= link_to "Back", :back, class: 'btn btn-default' %>
+  </div>
+<% end %>

@@ -1,0 +1,52 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
+
+
+Installing the project
+
+* ruby 2.3.1
+
+* rails 4.2.5.1
+
+* bundle install
+
+* bundle exec rake db:create
+
+* bundle exec rake db:migrate #mysql datatabase has been used here
+
+* bundle exec rake db:seed
+
+* rails s
+
+* login as superadmin or admin and create necessary data
+
+* use the credentials from config/data/employee_data.yml for login
+and proceed
+
+* Thanks

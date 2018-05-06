@@ -1,0 +1,176 @@
+mr:
+  date:
+    order:
+      - :year
+      - :month
+      - "day"
+  common:
+    home: "मूळ पान"
+    about: "आमच्या बद्दल "
+    faq: "प्रश्न"
+    contact: "संपर्क"
+    create_employee: "कामगारांची नोंद करा "
+    sign_in: " नोंदणीकृत"
+    sign_up: "नवीन नोंदणी "
+    logout: "बंद करा "
+    fill_work: "आजचे काम भरा "
+  page:
+    home:
+      welcome: "ए टी एच, पुणे मध्ये आपले स्वागत असो"
+      alert_message: "हे पाहण्यासाठी तुम्हाला तुमच्या खात्यात प्रवेश करावा लागेल "
+    faq:
+      heading: "वारंवार विचारलेले प्रश्न"
+      alert_message: "हे पाहण्यासाठी तुम्हाला तुमच्या खात्यात प्रवेश करावा लागेल "
+    contact:
+      heading: "तुम्ही येथे आमच्याशी संपर्क करू शकता"
+      alert_message: "हे पाहण्यासाठी तुम्हाला तुमच्या खात्यात प्रवेश करावा लागेल "
+    about: 
+      heading: "तुम्ही येथे आमच्या बद्दल माहिती मिळवू शकता"
+      alert_message: "हे पाहण्यासाठी तुम्हाला तुमच्या खात्यात प्रवेश करावा लागेल "
+  worksheet:
+    index:
+      message1: "तुमच्या कामाची यादी रिकामी आहे"
+      message2: "तुमच्या कामाची यादी "
+      link_description: "खालील लिंक वरुन नवीन काम जोडा "
+      new_worksheet_link: "नवीन काम जोडा"
+      show_link: "पहा"
+      edit_link: "संपादित करा"
+      destroy_link: "काढून टाका" 
+    new:
+      new_worksheet: "नवीन काम भरा"
+      project_name: "प्रकल्पाचे  नाव"
+      work_hours: "कामाचे तास"
+      work_details: "कामाचे स्पष्टीकरण"
+      attachment: "कामासंदर्भात माहिती जोडणी "
+      create: "तयार करा"
+      link_description: "मागील पानावर जाण्यासाठी खालील लिँकचा वापर करा "
+      back: "मागे"
+      employee_id: "कामगार क्रमांक"
+      action: " क्रिया"
+      button: "आजचे काम तयार करा"
+    show:
+      link_description: "तुमचे काम संपादित करण्यासाठी 'संपादन' लिँकचा वापर करा व कामाची यादी पाहण्यासाठी 'मागे' चा वापर करा "  
+      edit: "संपादन"
+    edit:
+      message: "संपादित केलेले काम आणि कामाची यादी पाहण्यासाठी खालील लिँकचा वापर करा" 
+      back_link: "मागे"
+      show_link: "पहा"    
+  employee: 
+    sign_up:
+      message1: "नवीन नोंदणी विभागात आम्ही आपले स्वागत करतो"
+      first_name: "पहिले नाव"
+      last_name: "शेवटचे नाव"
+      gender: "आपले लिंग निवडा" 
+      birth_date: "जन्म दिनांक"
+      qualification: "पात्रता "
+      department: "कामाचा विभाग"
+      joining_date: "हजर राहिल्याची दिनांक"
+      email: "ईमेल "
+      password: "परवलीचा शब्द"
+      confirm_pass: "परवलीच्या  शब्दाची खात्री करा "
+      blood_group: "आपला रक्त गट निवडा"
+      contact: "संपर्क क्रमांक" 
+      condition: "किमान 8 अक्षरे"
+      sign_up_button: "नोंदणी करा "
+      bottom_link: "तुम्ही जर अगोदर नोंदणी केली असेल तर पुढील  लिंक वरुन तुमचे अकाउंट वापरा "
+      login_link: "नोंदणीकृत कामगार"
+    sign_in:
+      email: "ईमेल "
+      password: "परवलीचा शब्द"
+      remember: "मला जतन करा"
+      login: "तुमच्या खात्यात प्रवेश करा"
+      message1: "तुमच्या खात्यात  प्रवेश मिळविण्यासाठी येथे माहिती भरा" 
+      forgot_password_description: "तुमच्या खात्याचा परवलीचा शब्द विसरल्यास पुढील लिंकवर मिळावा"
+      forgot_password_link: "परवलीचा शब्द विसरलात ?"
+      sign_up: "नवीन नोंदणी "
+      sign_up_message: "जर तुमचे खाते नसेल तर पुढील लिंकवर नवीन नोंदणी करा "
+      alert_message: "हे पाहण्यासाठी तुम्हाला तुमच्या खात्यात प्रवेश करावा लागेल "
+    password:
+      message: "परवलीचा शब्द विसरलात ? काळजी करू नका "  
+      pass_button: "परवलीचा शब्द ईमेलवर पाठवा" 
+  roles: 
+    show:
+      designation: "पद"
+      status: "स्थिती"
+      edit_link: "संपादित करा"
+      back_link: "मागे"
+    edit:
+      back_link: "मागे"
+      heading: "येथे पद संपादित करा"
+      show: "पहा"  
+    index:
+      designation: "पद"
+      status: "स्थिती"
+      actions: " क्रिया"
+      show_link: "पहा"
+      edit_link: "संपादित करा"
+      destroy_link: "काढून टाका" 
+      heading: "संस्थेतील पदांची यादी"
+      bottom_link: "तुम्ही पुढील लिंकवर नवीन पद जोडू शकता"
+      new_role: "नवीन पद जोडा"
+      create_button: "नवीन पद तयार करा "
+  company:
+    index:
+      message: "नोंदणी झालेल्या संस्थांची यादी"
+      company_id: "संस्था क्रमांक"
+      company_name: "संस्थेचे नाव "
+      registration: "नोंदणी क्रमांक"
+      start_date: "सुरू झालेली तारीख"
+      address: "पत्ता"
+      website: "संकेतस्थळ"
+      actions: "क्रिया"
+      show_link: "दाखवा" 
+      edit_link: "संपादन"
+      destroy_link: "काढून टाका"
+      bottom_link_description: "तुम्ही येथे नवीन संस्था जोडू शकता"
+      bottom_link: "नवीन संस्था जोडा"
+      show_heading: ""     
+  activerecord:
+    errors:
+      models:
+        employee:
+          attributes:
+            email: 
+              blank: " ईमेल रिकामे ठेऊ शकत नाही"
+            password: 
+              blank: "परवलीचा शब्द रिकामे ठेऊ शकत नाही"
+              too_short: "परवलीचा शब्द किमान आठ अक्षरे असावा"
+            password_confirmation:
+              confirmation: "दोन्ही परवलीचे शब्द जुळले नाही ... कृपया परवलीचा शब्दाची पुन्हा खात्री करा."  
+            first_name: 
+              blank: "पहिले नाव रिकामे ठेऊ शकत नाही"
+            last_name: 
+              blank: "शेवटचे नाव रिकामे ठेऊ शकत नाही"
+            blood_group: 
+              blank: "रक्त गट रिकामे ठेऊ शकत नाही"
+            contact_no: 
+              blank: "रिकामे ठेऊ शकत नाही"
+            gender: 
+              blank: "लिंग रिकामे ठेऊ शकत नाही"
+            qualification: 
+              blank: "पात्रता रिकामे ठेऊ शकत नाही"
+            department: 
+              blank: "विभाग रिकामे ठेऊ शकत नाही"
+        work_sheet:
+          attributes:
+            project_name:
+              blank: ""
+            worked_hours: 
+              blank: ""
+            work_details:
+              blank: ""
+              too_short: ""  
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
